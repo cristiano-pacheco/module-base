@@ -2,27 +2,8 @@
 
 ## Installation
 
-### With Composer
-
-1-Add the session below to your composer.json file:
-
 ```
-"repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/cristianopacheco/module-base"
-    }
-  ],
-```
-
-```
-composer require cristianopacheco/module-base
-```
-
-### With Modman
-
-```
-modman clone https://github.com/cristianopacheco/module-base
+composer require cristiano-pacheco/module-base
 ```
 
 ## To enable the module
@@ -30,4 +11,5 @@ modman clone https://github.com/cristianopacheco/module-base
 ```
 bin/magento module:enable CristianoPacheco_ModuleBase
 bin/magento setup:upgrade
+bin/magento cache:clean
 ```
